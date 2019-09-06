@@ -117,6 +117,14 @@ module.exports = {
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.app/offline
     // 'gatsby-plugin-offline',
-    'gatsby-plugin-netlify'
+    'gatsby-plugin-netlify',
+    'gatsby-plugin-remote-images'
+    {
+      resolve: `gatsby-plugin-remote-images`,
+      options: {
+        nodeType: 'myNodes',
+        imagePath: 'path.to.image',
+      },
+    }
   ],
 }
